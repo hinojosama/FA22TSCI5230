@@ -51,3 +51,4 @@ local.config.R
 *.tsv
 *.rda
 *.xlsx
+mimic-iv-clinical-database-demo-1.0.zip
