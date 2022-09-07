@@ -58,10 +58,6 @@ TableNames <- basename(Unzipped_Data) %>%
   path_ext_remove() %>%
   path_ext_remove()
 
-# TableNames
-# assign(TablesNames[ii], import(UnzippedData[ii], format = 'csv'), inherits = TRUE)
-
-
 for(ii in seq_along(TableNames)) {
   assign(TableNames[ii], import(Unzipped_Data[ii], format = 'csv'), inherits = TRUE)}
 
