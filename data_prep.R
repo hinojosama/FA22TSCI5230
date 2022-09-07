@@ -37,13 +37,21 @@ options(max.print=42);
 panderOptions('table.split.table',Inf); panderOptions('table.split.cells',Inf)
 
 #Load Data----
-#note that if the file 'working_scrip.rdata' does not exist it wiill run system
+#note that if the file 'working_scrip.rdata' does not exist it will run system
 #[rather than source() because that would source or load a bunch of other stuff into
-#our environement we do not want mucking up this scrip]
+#our environment we do not want mucking up this scrip]
 
-#if(!file.exists("working_script.rdata")){system(R -f working_script.R)}
+if(!file.exists("data.rdata")){system("R -f data.R")}
 
+load("data.rdata")
 
 #Section 2----
+
+ggplot(data = patients, aes(x = anchor_age, fill = gender))
++ geom_histogram() + geom_vline(xintercept = 65)
+
+table(patients$gender)
+# check for duplicates in the subject_id column. if no duplicates should be length 100
+length(unique(patients$subject_id))
 
 

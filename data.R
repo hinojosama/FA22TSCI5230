@@ -69,5 +69,5 @@ for(ii in seq_along(TableNames)) {
 # mapply(function(xx,yy)
 #   assign(xx, import(yy,format = 'csv'), inherits = TRUE), TableNames, Unzipped_Data)
 
-save(list = TableNames, file = "mimic_data.rdata")
+save(list = TableNames, file = "data.rdata")
 
