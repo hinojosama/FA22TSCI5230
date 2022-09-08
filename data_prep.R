@@ -1,5 +1,6 @@
 #'---
 #' title: "TSCI 5230: Introduction to Data Science"
+#' author: 'Marco Hinojosa'
 #' abstract: |
 #'  | Data preparation for demo MIMIC IV dataset. 
 #' documentclass: article
