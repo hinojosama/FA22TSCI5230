@@ -2,9 +2,7 @@
 #' title: "Data Extraction
 #' author: 'Marco Hinojosa'
 #' abstract: |
-#'  | Provide a summary of objectives, study design, setting, participants,
-#'  | sample size, predictors, outcome, statistical analysis, results,
-#'  | and conclusions.
+#'  | import the data, make tables, and save as an rdata file
 #' documentclass: article
 #' description: 'Manuscript'
 #' clean: false
